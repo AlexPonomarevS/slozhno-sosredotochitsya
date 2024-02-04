@@ -1,11 +1,11 @@
-:root{
+:root {
   --background-image: url(/images/cover-image-dark.png);
   --accent-color: #ff0070;
-  --font: 'IBM Plex mono';
-  --title-color: #DB00FF;
+  --font: "IBM Plex mono";
+  --title-color: #db00ff;
   --font-main-size: 18px;
   --title-decor-color: #000028;
-  --paragraph-color: #F1B2CE;
+  --paragraph-color: #f1b2ce;
   --decorated-zone-color: #ff0070;
   --decorated-zone-position: 10px;
 }
