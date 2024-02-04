@@ -58,6 +58,13 @@
   box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
+@media screen and (width >= 768px) {
+  .decorated-tag {
+    right: 49px;
+    top: 20px;
+  }
+}
+
 .header {
   min-height: 100vh;
   display: grid;
@@ -103,7 +110,7 @@
   border: none;
   padding: 0;
   margin: auto;
-  padding: 0 13px 0 13px;
+  padding: 0 13px;
 }
 
 .header__theme-menu-button:hover {
