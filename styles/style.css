@@ -208,6 +208,10 @@
   }
 }
 
+.empty {
+  display: none;
+}
+
 .main__section,
 .main__section__content {
   display: grid;
@@ -287,6 +291,7 @@
   }
 
   .empty {
+    display: block;
     grid-area: empty;
   }
 }
