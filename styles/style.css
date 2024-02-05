@@ -44,6 +44,7 @@
   top: 10px;
   color: var(--accent-color);
   text-transform: uppercase;
+  opacity: var(--decorated-tag-opacity);
 }
 
 .decorated-tag::after {
@@ -66,7 +67,8 @@
 }
 
 .header {
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   padding: 10px;
@@ -115,9 +117,15 @@
 .header__theme-menu-button:hover {
   border: 1px solid var(var(--button-color));
 }
+
+.header__theme-menu-button:focus {
+  border-bottom: 1px solid var(--button-color);
+  outline: none;
+}
+
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--button-color);
-  outline-width: 0;
+  outline: none;
 }
 
 .header__theme-menu-list {
@@ -200,15 +208,13 @@
 }
 
 @media screen and (width >= 768px) {
-  .section-1,
-  .section-3 {
+  .main__section:nth-child(odd) {
     grid-template-columns: 1fr 2fr;
   }
 }
 
 @media screen and (width >= 1024px) {
-  .section-3,
-  .section-1 {
+  .main__section:nth-child(odd) {
     gap: 12px;
   }
 }
@@ -220,7 +226,7 @@
 }
 
 @media screen and (width >= 768px) {
-  .main__section__title-2 {
+  .main__section__title:nth-child(2) {
     max-width: 236px;
   }
 }
@@ -236,27 +242,27 @@
 }
 
 @media screen and (width >= 1024px) {
-  .section-2 {
+  .main__section:nth-child(2) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       "title . ."
       "article-1 article-2 article-3";
     gap: 20px;
   }
-  .main__section__title-2 {
+  .main__section__title:nth-child(2) {
     max-width: none;
     grid-area: title;
   }
   .main__section__article {
     grid-template-rows: min-content 1fr;
   }
-  .article-1 {
+  .main__section:nth-child(2) .main__section__article:nth-child(1) {
     grid-area: article-1;
   }
-  .article-2 {
+  .main__section:nth-child(2) .main__section__article:nth-child(2) {
     grid-area: article-2;
   }
-  .article-3 {
+  .main__section:nth-child(2) .main__section__article:nth-child(3) {
     grid-area: article-3;
   }
 }
@@ -306,7 +312,8 @@
 }
 
 .footer {
-  min-height: 100vh;
+  min-height: 668px;
+  height: 100vh;
   display: grid;
   align-items: center;
   justify-items: center;
@@ -316,12 +323,19 @@
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
+
 .link:hover {
   border-bottom: 1px solid var(--paragraph-color);
 }
+
+.link:focus {
+  border: 1px solid var(--paragraph-color);
+  outline: none;
+}
+
 .link:focus-visible {
   border: 1px solid var(--paragraph-color);
-  outline-width: 0;
+  outline: none;
 }
 
 .title-normal {

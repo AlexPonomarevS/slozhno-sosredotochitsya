@@ -9,7 +9,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --background-image: url(/images/cover-image-dark.png);
+  --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
   --accent-color: #ff0070;
   --font: "IBM Plex mono";
@@ -20,6 +20,7 @@
   --decorated-zone-color: #ff0070;
   --button-color: #ff0070;
   --decorated-zone-position: 10px;
+  --decorated-tag-opacity: 1;
 }
 
 @media screen and (width >= 768px) {
@@ -30,7 +31,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-image: url(/images/cover-image-dark.png);
+    --background-image: url(../images/cover-image-dark.png);
     --background-color: #000028;
     --accent-color: #ff0070;
     --font: "IBM Plex mono";
@@ -41,5 +42,6 @@
     --decorated-zone-color: #ff0070;
     --button-color: #ff0070;
     --decorated-zone-position: 10px;
+    --decorated-tag-opacity: 1;
   }
 }
