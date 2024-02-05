@@ -2,11 +2,14 @@
   --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
   --accent-color: #ff0070;
+  --general-title-shadow-color: #ff0070;
   --font: "IBM Plex mono";
   --title-color: #db00ff;
   --font-main-size: 18px;
   --title-decor-color: #000028;
   --paragraph-color: #f1b2ce;
   --decorated-zone-color: #ff0070;
+  --button-color: #ff0070;
+  --button-color-hover: rgb(255, 0, 112, 0.4);
   --decorated-zone-position: 10px;
 }
