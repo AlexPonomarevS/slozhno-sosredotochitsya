@@ -237,7 +237,7 @@
 .main__section__title {
   font-size: var(--font-main-size);
   font-weight: bold;
-  color: var(--title-decor-color);
+  color: var(--main__section__title-color);
 }
 
 @media screen and (width >= 768px) {

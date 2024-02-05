@@ -17,6 +17,7 @@
   --title-color: #ffc2e6;
   --font-main-size: 18px;
   --title-decor-color: #353430;
+  --main__section__title-color: #353430;
   --paragraph-color: #353430;
   --decorated-zone-color: #353430;
   --button-color: #353430;
@@ -44,6 +45,7 @@
     --title-color: #ffc2e6;
     --font-main-size: 18px;
     --title-decor-color: #353430;
+    --main__section__title-color: #353430;
     --paragraph-color: #353430;
     --decorated-zone-color: #353430;
     --button-color: #353430;
