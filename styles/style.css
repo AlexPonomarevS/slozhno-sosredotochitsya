@@ -226,7 +226,7 @@
 }
 
 @media screen and (width >= 768px) {
-  .main__section__title:nth-child(2) {
+  .main__section__title:nth-child(1) {
     max-width: 236px;
   }
 }
