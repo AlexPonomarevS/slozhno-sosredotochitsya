@@ -249,6 +249,9 @@
       "article-1 article-2 article-3";
     gap: 20px;
   }
+  .main__section__title:nth-child(1) {
+    max-width: none;
+  }
   .main__section__title:nth-child(2) {
     max-width: none;
     grid-area: title;
