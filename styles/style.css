@@ -100,6 +100,7 @@
     align-self: end;
     margin: 0 20px 53px 0;
   }
+  
   .general-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -115,7 +116,8 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(var(--button-color));
+  border: 1px solid var(--button-color);
+  outline: none;
 }
 
 .header__theme-menu-button:focus {
@@ -140,6 +142,7 @@
     justify-self: center;
     margin: 20px;
   }
+
   .header__theme-menu-list {
     flex-direction: row;
   }
@@ -249,22 +252,28 @@
       "article-1 article-2 article-3";
     gap: 20px;
   }
+
   .main__section__title:nth-child(1) {
     max-width: none;
   }
+
   .main__section__title:nth-child(2) {
     max-width: none;
     grid-area: title;
   }
+
   .main__section__article {
     grid-template-rows: min-content 1fr;
   }
+
   .main__section:nth-child(2) .main__section__article:nth-child(2) {
     grid-area: article-1;
   }
+
   .main__section:nth-child(2) .main__section__article:nth-child(3) {
     grid-area: article-2;
   }
+
   .main__section:nth-child(2) .main__section__article:nth-child(4) {
     grid-area: article-3;
   }
@@ -285,30 +294,37 @@
     grid-template-rows: repeat(3, max-content);
     gap: 20px;
     grid-template-areas:
-      "img-1 img-1 img-2"
-      "img-3 img-4 img-2"
-      "img-3 img-5 img-5";
+      "sunset sunset icecream"
+      "tape books icecream"
+      "tape street street";
   }
+
   .main__section__article__img {
     max-width: 100%;
     object-fit: cover;
     min-height: 100%;
   }
-  .img-1 {
-    grid-area: img-1;
+
+  .main__section__article__img:nth-child(1) {
+    grid-area: sunset;
   }
-  .img-2 {
-    grid-area: img-2;
+
+  .main__section__article__img:nth-child(2) {
+    grid-area: icecream;
   }
-  .img-3 {
-    grid-area: img-3;
+
+  .main__section__article__img:nth-child(3) {
+    grid-area: tape;
   }
-  .img-4 {
-    grid-area: img-4;
+
+  .main__section__article__img:nth-child(4) {
+    grid-area: books;
   }
-  .img-5 {
-    grid-area: img-5;
+
+  .main__section__article__img:nth-child(5) {
+    grid-area: street;
   }
+
   .article-img {
     gap: 20px;
   }
